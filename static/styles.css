@@ -1,0 +1,83 @@
+body {
+	height:750px;
+	background-color: #011F3F;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1, h3, p {
+	font-size: 40px;
+	font-family: 'Press Start 2P', cursive;
+	color: #FEF2BF;
+}
+
+p {
+	font-size: 20px;
+}
+
+h1:hover {
+	transform: scale(0.98);
+}
+
+p:hover {
+	transform: scale(0.98);
+}
+
+.button {
+	font-family: 'Press Start 2P', cursive;
+	font-weight: bolder;
+	font-size: 15px;
+	border-radius: 5px;
+	padding-block: 10px;
+	background-color: #FEF2BF;
+	border-color: #4287f5;
+	color: #4287F5;
+}
+
+.button:hover {
+    transform: scale(0.98);  
+}
+
+.button:click {
+	border-color: #4287f5;
+}
+
+.box {
+	margin: 100px;
+}
+
+.text {
+	border: #4287f5;
+	margin: 10px;
+	height: 50px;
+	width: 1250px;
+	background-color: #4287f5;
+	border-radius: 9px; 
+}
+
+.text:hover {
+	transform: scale(0.98);
+}
+
+.text:click {
+	border-color: #4287f5;
+}
+
+.cam {
+	margin: 50px;
+	height: 450px;
+	width: 450px;
+	background-color: #FEF2BF;
+}
+
+.cam:hover {
+	transform: scale(0.98);
+}
+
+canvas {
+	background-color: #FEF2BF;
+	height: 10px;
+	width: 40px;
+}

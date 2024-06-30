@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" href="/static/styles.css">
+	<title>How are you feeling?</title>
+</head>
+<body>
+	<h1 align="center">Now take a look at the screen...</h1>
+	<form method = "POST" action = "/sendData">
+		<p> {{error}} </p>
+		<input type="submit" id="submit" class="button">
+	</form>
+	<video class = "cam" autoplay="true"></video>
+	<canvas id="canvas" class="d-none"></canvas>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="/static/camera.js" type="module"></script>
+</body>
+</html>

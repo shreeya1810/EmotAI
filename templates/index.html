@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" href="/static/styles.css">
+	<title>How are you feeling?</title>
+</head>
+<body>
+	<h1 align="center">Can you explain how you feel in a few words?</h1>
+	<form method = "POST" action = "/vision">
+		<input type="submit" id="submit" class="button">
+	</form>
+	<div class = "box">
+		<p align="left">Enter words here</p>
+		<input class = "text">
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/static/index.js"></script>
+</body>
+</html>
