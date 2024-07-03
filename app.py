@@ -18,8 +18,8 @@ def open_image_from_base64(base64_string):
 
 app = Flask(__name__)
 
-model = load_model('model.h5')
-emotion_labels = ['angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral']
+# model = load_model('model.h5')
+# emotion_labels = ['angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral']
 
 def prepare_image(image, target_size):
     if image.mode != "RGB":
@@ -50,16 +50,16 @@ def parse_request():
 
 @app.route('/sendData', methods=['POST'])
 def send_data():
-    if not jsonData:
-        return render_template('vision.html', error = "Please click a picture")
-    base64_image_string = jsonData[0]
-    image = open_image_from_base64(str(base64_image_string))
-    processed_image = prepare_image(image, target_size=(48, 48))
-    print('Image processed')
-    prediction = model.predict(processed_image)
-    predicted_class = emotion_labels[np.argmax(prediction[0])]
-    print(predicted_class)
-    return render_template('show_result.html', prediction = predicted_class)
+    # if not jsonData:
+    #     return render_template('vision.html', error = "Please click a picture")
+    # base64_image_string = jsonData[0]
+    # image = open_image_from_base64(str(base64_image_string))
+    # processed_image = prepare_image(image, target_size=(48, 48))
+    # print('Image processed')
+    # prediction = model.predict(processed_image)
+    # predicted_class = emotion_labels[np.argmax(prediction[0])]
+    # print(predicted_class)
+    return render_template('show_result.html')
 
 if __name__ == '__main__':
-    app.run(port=1989)
+    app.run(port=5000)
