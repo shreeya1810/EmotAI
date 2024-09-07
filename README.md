@@ -10,9 +10,9 @@
 
 ## Methodology
 
-1. **Data Preprocessing**: Facial images are preprocessed using OpenCV and Dlib for face detection.
+1. **Data Preprocessing**: Facial images are preprocessed using OpenCV for face detection.
 2. **Ensemble Learning**: Multiple deep learning models are combined for emotion classification, leveraging the strengths of different architectures like CNN, VGG, and ResNet.
-3. **Real-time Detection**: The Flask backend serves a REST API to process images and detect emotions, while the React frontend displays the results in real-time.
+3. **Real-time Detection**: The Flask backend processes images and detects emotions, while the React frontend displays the results in real-time.
 
 ## Results
 
